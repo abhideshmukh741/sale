@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    line-height: 50px;
+    background-color: #FFD95F;
+    position: relative;
+}
+
+/* Navbar Toggler (3-line menu) - Moved to Left */
+.navbar-toggler {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    left: 20px; /* Moves button to the left */
+    top: 10px;
+}
+
+/* Navbar Collapse (Dropdown Menu) */
+.navbar-collapse {
+    position: absolute;
+    top: 60px; /* Places dropdown above the cards */
+    left: 20px; /* Aligns menu to the left */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    min-width: 180px;
+    z-index: 1000;
+}
+
+/* Navbar Items */
+/* Navbar links styling */
+.navbar-nav .nav-link {
+    color: black;  /* Ensuring all links have the same color */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #ff5733;  /* Changes color on hover */
+    transform: scale(1.1); /* Slight scale effect */
+}
+
+/* Adjusting spacing */
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+
+/* Sale Text Styling */
+.sale-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+/* Card Styling */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styling */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        left: 10px; /* Ensures it's still on the left in mobile view */
+    }
+    
+    .navbar-collapse {
+        left: 10px; /* Keeps menu aligned properly */
+        top: 55px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        background: white;
+    }
+}

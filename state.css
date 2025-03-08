@@ -1,0 +1,87 @@
+/* Navbar Styling */
+body{
+    background-color: #FFD95F;
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+    color: #000000;  /* Ensuring all links have the same color */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #ff5733;  /* Changes color on hover */
+    transform: scale(1.1); /* Slight scale effect */
+}
+
+/* Adjusting spacing */
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+
+/* Ensure navbar container is using flex layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Container inside navbar (for home button and sale text) */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    width: 100%;  /* Make sure it stretches across the whole space */
+}
+
+/* Styling for the sale text */
+.sale-text {
+    font-size: 24px;
+    font-family: 'Cursive', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1; /* This ensures that the sale text stays in the center */
+}
+
+/* Optional: Add some space between the home icon and the sale text */
+.navbar-brand img {
+    margin-right: 15px; /* Adds some space to the right of the home icon */
+}
+
+.state {
+    height: 150px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+    color: #fcfcfa;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.state:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
